@@ -3,4 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+body{
+
+  background: linear-gradient(rgba(213, 197, 228, 0.479), rgb(255,255,255));
+  position: relative;
 }

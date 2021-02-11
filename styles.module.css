@@ -1,9 +1,26 @@
+.back{
+
+  position: absolute !important;
+  z-index: 0;
+}
+
+.back__img{
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
 .nav {
   display: flex;
   height: 5rem;
   justify-content: space-between;
   padding: 0 3rem;
   align-items: center;
+  background-color: transparent;
+  z-index: 99;
+  position: relative;
+ 
 }
 
 .nav > div {
@@ -12,6 +29,8 @@
 
 .links {
   display: flex;
+
+  align-items: center;
 }
 
 .links > p {
@@ -21,23 +40,50 @@
   font-size: 13px;
 }
 
+.links a{
+  text-decoration: none;
+ color: black;
+ margin-left: 17px;
+ font-size: 13px;
+
+
+}
+
+.links .get__started{
+  background-color:rgb(144, 100, 187) ;
+  color: white;
+  text-decoration: none;
+  height: 50px;
+  width: 9rem;
+  margin-left: 17px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
 .links > p:hover {
   color: rgb(144, 100, 187);
   font-weight: bold;
 } 
 
+/* Hero section */
+
 .main{ 
   display: flex;
-  margin: 0 3rem;
-  background-color: rgba(204, 204, 204, 0.438);
+  margin: 0 4rem;
+  visibility: hidden;
+ 
 }
 
 .HeroText{
   padding: 5rem 3rem;
+  word-wrap: break-word;
 }
 
 .HeroText >h1{
-  color: rgb(144, 100, 187);
+  color:rgb(32, 30, 30);
+  font-size: 3.5rem;
   margin-bottom: 30px;
 }
 
@@ -65,61 +111,212 @@
   border: none;
 }
 .HeroText > div > p > span {
-  color:rgb(144, 100, 187) ;
+  color:rgb(59, 130, 189) ;
   font-weight: bold;
 }
 
-.ImageGallery{
+
+/* boody section */
+.body__section {
+  padding: 1rem 3rem;
+
+
+
+}
+.body__section h2{
+  text-align: center;
+  margin: 20px 0;
+}
+
+.image__section{
+
   display: grid;
-  grid-template-columns:repeat(2 ,  2fr) ;
-  gap: 15px;
-  /* background-color: #303031; */
+  grid-template-columns: repeat(3, 1fr);
+ 
 }
 
-
-
-.sectionOne{
-  display: flex;
-  justify-content: space-around;
-  padding: 3rem 7rem;
+.image__box{
+  position: relative;
+ 
 }
 
-.textArea > h3 {
-  color: rgb(144, 100, 187);
-  font-size: 25px;
-  margin-bottom: 20px;
-  text-transform: capitalize;
+.section__card2{
+  margin-top: 40px;
+
 }
 
-.textArea >button {
+.section__card3{
+  margin-top: 80px;
+
+}
+
+.img__main{
+  position: relative;
+}
+
+.img__medium{
+  position: absolute;
+  z-index: 99;
+  top: 15%;
+  left: -3%;
+}
+
+.img__small{
+  position: absolute;
+  z-index: 99;
+  top: 5%;
+
+}
+.img__square{
+  position: absolute;
+  z-index: 99;
+  top: -8%;
+  left: 8%;
+
+}
+
+.img__mailchimp{
+  position: absolute;
+  z-index: 99;
+  top: 2%;
+  left: 47%;
+  
+}
+.img__facebook{
+  position: absolute;
+  z-index: 99;
+  top: 25%;
+  left: 7%;
+  
+}
+.img__google{
+  position: absolute;
+  z-index: 99;
+  top: 54%;
+  left: 22%;
+  
+}.img__jetpack{
+  position: absolute;
+  z-index: 99;
+  top: 25%;
+  left: 37%;
+  
+}
+.img__top{
+  position: absolute;
+  z-index: 99;
+  top: -30%;
+  left: 45%;
+  
+}
+.img__side{
+  position: absolute;
+  z-index: 99;
+  top: 25%;
+  left: 50%;
+  
+}
+
+.card__textArea{
+  padding: 10px 30px;
+}
+
+.card__textArea h3{
+  line-height: 30px;
+  letter-spacing: 1px;
+
+}
+
+.card__textArea p{
+  color: rgb(146, 144, 144);
+  margin: 10px 0;
+  font-size: 13px;
+}
+
+.card__textArea a{
+  text-decoration: none;
+  font-size: 13px;
+  color:rgb(59, 130, 189)
+
+}
+
+/* section 2 */
+.sectionTwo__image{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+
+}
+
+.section__two{
+  background-image: url(./public/background.png);
+  background-size:cover ;
+  background-position: top;
+  background-clip: padding-box;
+  background-repeat: round;
+  margin: 100px 0; 
+  height: 100vh;
+  color:#fff;
+  padding: 0 19rem;
+  position: relative;
+}
+
+.section__two h3{
+  font-weight: bold;
+  
+}
+
+.section__two p{
+  margin: 10px 0;
+  
+}
+
+.section__two button{
   height: 50px;
-  width: 17rem;
+  width: 12rem;
   margin-top: 15px;
   border-radius: 28px;
-  background-color: rgb(144, 100, 187);
+  background-color: rgb(110, 187, 100);
   cursor: pointer;
   color: white;
   outline: none;
   border: none;
+  
 }
 
-.reviews{
-  background-color: rgb(144, 100, 187);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  padding: 3rem 1rem;
-  align-items: center;
-  text-align: center;
-  font-size: 15px;
+.sectionTwo__image1{
+  position: absolute;
+  top: -10%;
 }
 
-.reviews > div > h2 {
-  margin-bottom: 10px;
+.sectionTwo__image2{
+  position: absolute;
+  bottom: -10%;
+  right: 20%;
 }
 
-.reviews > .personReview{
-  margin-top: 3rem;
+.sectionTwo__Text1{
+  position: absolute;
+  top: 10%;
+  right: 26%;
+  width: 24%;
+}
+
+.sectionTwo__Text2{
+  position: absolute;
+  bottom: 10%;
+  left: 30%;
+  width: 24%;
+}
+/* section 3 */
+
+
+/* footer */
+
+.footer{
+  background-color: rgb(81, 70, 175);
+ padding: 10px 4rem;
 }
 
 .support{
@@ -127,19 +324,21 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: rgba(204, 204, 204, 0.438);
   padding-top: 1.5rem;
 }
 
 .about{
-  background-color: rgb(144, 100, 187);
+
   display: flex;
   justify-content: space-around;
   padding: 2.3rem 1rem;
   color: white;
 }
 .about > p  {
-  line-height: 20px;
+  line-height: 40px;
+  font-size: 22px;
+  word-spacing: 10px;
+  
 }
 
 .about > p > span {
@@ -159,33 +358,339 @@
   font-weight: bold;
 }
 
+.agreement{
+  display: flex;
+  color: #fff;
+ margin: 2rem 0;
+  justify-content: center;
+}
+
+.agreement div{
+  display: flex;
+  align-items: center;
+
+
+}
+
+.agreement div p{
+  margin-right:  28px;
+  margin-left: 5px;
+
+}
+
+.agreement span {
+  font-weight: bold;
+}
+
+.footer__logo{
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.foot{
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 7rem;
+  color:white;
+}
+
+.foot h4{
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+.foot p{
+  font-size: 12px;
+}
+
+.bottom{
+  background-color: #fff;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+}
+
+.icons{
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+ 
+}
+
+@media screen and (max-width: 1300px){
+  /* section two */
+
+.section__two{
+ 
+  background-repeat: round;
+  margin: 100px 0;
+  padding: 0 19rem;
+  height: 120vh;
+  position: relative;
+}
+
+.sectionTwo__image1{
+  position: absolute;
+  top: -10%;
+  left: 10%;
+  
+}
+
+.sectionTwo__image2{
+  position: absolute;
+  bottom: -10%;
+  right: 10%;
+}
+
+.sectionTwo__Text1{
+  position: absolute;
+  top: 10%;
+  right: 20%;
+  width: 20%;
+}
+
+.sectionTwo__Text2{
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  width: 20%;
+}
+
+
+}
 @media screen and (max-width: 900px){
   .links > p {
     display: none;
   }
-
-.sectionOne{
+  .HeroText{
+    padding: 5rem 2rem;
+    word-wrap: break-word;
+  }
+  
+  .HeroText >h1{
+    color:rgb(32, 30, 30);
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  .section__card2{
+    margin-top: 0;
+  }
+  
+  .section__card3{
+    margin-top: 0;
+    margin-top: 60px;
+  }
+  
+  .section__two{
  
-  padding: 3rem 3rem;
+    background-repeat: no-repeat;
+    margin: 100px 0;
+    padding: 0 19rem;
+    height: 120vh;
+    position: relative;
+  }
+  
+  .sectionTwo__image1{
+    position: absolute;
+    top: -10%;
+    left: 10%;
+    
+  }
+  
+  .sectionTwo__image2{
+    position: absolute;
+    bottom: -10%;
+    right: 10%;
+  }
+  
+  .sectionTwo__Text1{
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    width: 30%;
+  }
+  
+  .sectionTwo__Text2{
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    width: 30%;
+  }
+  .about > p  {
+    line-height: 40px;
+    font-size: 18px;
+    word-spacing: 5px;
+    
+  }
+  
+
+.foot{
+ 
+  padding: 2rem 1rem;
+}
+.image__section{
+
+  grid-template-columns: repeat(2, 1fr);
 }
 
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 768px){
   .main{ 
     flex-direction: column;
     margin: 0 2rem;
    
   }
 
-  .sectionOne{
-    padding: 3rem 1rem;
+  .image__section{
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section__card2, .section__card1,.section__card3{
+    width: 60%;
+
+  }
+
+}
+
+@media screen and (max-width: 699px){
+  .links .get__started{
+    font-size: 60%;
+    height: 50px;
+    width: 5rem;
+    
+  }
+  .links a{
+   
+   font-size: 60%;
+  
+  
+  }
+  .HeroText >div > button{
+   
+    font-size: 60%;
+    width: 10rem;
+    
+  }
+
+  .section__card2, .section__card1, .section__card3{
+    width: 80%;
+
+  }
+
+  .sectionTwo__image1{
+    position: relative;
+    top: 0%;
+
+  }
+  
+  .sectionTwo__image2{
+    display: none;
+    position:relative;
+    bottom: 0%;
+    right: 0%;
+  }
+  
+  .sectionTwo__Text1{
+    position: relative;;
+    top: 0%;
+    right: 0%;
+    width: 70%;
+    font-size: 55%;
+  }
+  
+  .sectionTwo__Text2{
+    position:relative;
+    bottom: 0%;
+    left: 0%;
+    width: 70%;
+    font-size: 55%;
+    margin-top: 30px;
+
+  }
+  .section__two{
+
+    padding: 0 1rem;
+  
+  }
+  .section__two button{
+    height: 40px;
+    width: 9rem;
+    margin-top: 15px;
+    border-radius: 28px;
+    font-size: 85%;
+    text-transform: uppercase;
+
+  }
+
+  .footer{
+    
+   padding: 10px 1rem;
+  }
+
+  .about{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 2.3rem 1rem;
+    
+  }
+
+  .agreement{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .agreement div{
+    margin-top: 15px;
+  }
+
+  .foot{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .bottom{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .bottom div p{
+    margin: 15px 0;
+  }
+  .icons{
+    width: 50%;
+  }
+  
+}
+@media screen and (max-width: 500px){
+
+  .section__card2,.section__card1, .section__card3{
+    width: 100%;
+
+  }
+  .body__section{
+    padding: 1rem .2rem;
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
   }
- 
-
 }
 @media screen and (max-width: 400px){
   .main{ 
